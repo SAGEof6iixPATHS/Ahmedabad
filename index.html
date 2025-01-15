@@ -136,7 +136,7 @@
 
         // Track redirect and navigate
         document.getElementById("redirectNow").addEventListener("click", function () {
-            const targetUrl = "https://ahmedabad.news?source=ahmedabad";
+            const targetUrl = "https://amdavad.news?source=ahmedabad";
             
             // Track using Google Analytics
             gtag('event', 'redirect', {
@@ -152,7 +152,7 @@
         // Auto-redirect after 20 seconds if no action is taken
         setTimeout(() => {
             if (document.getElementById("popup").style.display === "flex") {
-                window.location.href = "https://ahmedabad.news?source=ahmedabad_auto";
+                window.location.href = "https://amdavad.news?source=ahmedabad_auto";
             }
         }, 20000); // 20000ms = 20 seconds
     </script>
