@@ -24,12 +24,12 @@
             margin: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
         }
         h1 {
             color: #0077cc;
             font-size: 28px;
             margin-bottom: 20px;
+            text-align: center;
         }
         p {
             font-size: 16px;
@@ -40,7 +40,6 @@
             margin: 15px 0 20px 20px;
             padding: 0;
             list-style-type: disc;
-            text-align: left;
         }
         li {
             margin-bottom: 10px;
@@ -53,6 +52,8 @@
         a:hover {
             text-decoration: underline;
         }
+
+        /* Popup Styles */
         .popup-overlay {
             display: none;
             position: fixed;
@@ -92,7 +93,6 @@
     </style>
 </head>
 <body>
-    <!-- Main Content -->
     <div class="container">
         <h1>Ahmedabad.news - Domain for Sale</h1>
         <p>Looking to launch a news platform, blog, or media outlet focused on Ahmedabad?</p>
@@ -111,8 +111,8 @@
     <div class="popup-overlay" id="popup">
         <div class="popup">
             <h2>Looking for More?</h2>
-            <p>Check out our other site <strong>Amdavad.News</strong> for more updates!</p>
-            <button id="redirectNow">Visit Amdavad.News</button>
+            <p>Check out our other site <strong>Ahmedabad.News</strong> for more updates!</p>
+            <button id="redirectNow">Visit Ahmedabad.News</button>
         </div>
     </div>
 
@@ -136,12 +136,12 @@
 
         // Track redirect and navigate
         document.getElementById("redirectNow").addEventListener("click", function () {
-            const targetUrl = "https://amdavad.news?source=ahmedabad";
+            const targetUrl = "https://ahmedabad.news?source=ahmedabad";
             
             // Track using Google Analytics
             gtag('event', 'redirect', {
                 event_category: 'Popup',
-                event_label: 'Visit Amdavad.News',
+                event_label: 'Visit Ahmedabad.News',
                 value: 1
             });
 
@@ -152,7 +152,7 @@
         // Auto-redirect after 20 seconds if no action is taken
         setTimeout(() => {
             if (document.getElementById("popup").style.display === "flex") {
-                window.location.href = "https://amdavad.news?source=ahmedabad_auto";
+                window.location.href = "https://ahmedabad.news?source=ahmedabad_auto";
             }
         }, 20000); // 20000ms = 20 seconds
     </script>
